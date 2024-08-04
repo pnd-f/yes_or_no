@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1 class="header">{% block title %}Main page{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+  <div class="content">
+    <form method="post">
+      <input type="text" name="question" placeholder="input your question">
+      <button>get answer</button>
+    </form>
+  </div>
+{% endblock %}

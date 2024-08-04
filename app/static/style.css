@@ -1,0 +1,109 @@
+.citationPosition {
+  position: absolute;
+  z-index: 2;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.citation {
+  color: #fff;
+  background: #f4dbb800;
+  border-left-style: groove;
+  border-width: 11px;
+  border-left-color: #f4dbb800;
+  padding-left: 10px;
+  font-size: xx-large;
+}
+.citationHint {
+  color: gray;
+  vertical-align: text-bottom;
+  font-size: small;
+  border-bottom-style: solid;
+  border-width: thin;
+}
+
+.citationInvisibleText {
+  color: #824f4f00;
+  background: #f4dbb882;
+  border-left-style: groove;
+  border-width: 11px;
+  border-left-color: aqua;
+  padding-left: 10px;
+  font-size: xx-large;
+}
+.citationHintInvisibleText {
+  color: #824f4f00;
+  vertical-align: text-bottom;
+  font-size: small;
+  border-bottom-style: solid;
+  border-width: thin;
+}
+
+.bigGif {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bigAnswer {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  z-index: 1;
+  font-size: 447px;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.54);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+}
+
+nav {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  text-shadow: 0 0 5px blanchedalmond;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%);
+  font-size: x-large;
+}
+.content {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%);
+}
+
+.header {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 30%;
+  font-size: 72px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%);
+}

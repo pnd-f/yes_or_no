@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Answer{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+  {% if answer %}
+
+    <div class="citationInvisibleText citationPosition">
+      <div>
+        <span class="citationHintInvisibleText">your question</span>
+      </div>
+      &#x003E {{ answer.question }}
+    </div>
+
+    <div class="citation citationPosition">
+      <div>
+        <span class="citationHint">your question</span>
+      </div>
+      &#x003E {{ answer.question }}
+    </div>
+
+    {% if answer.value == 'yes' %}
+      {% set style = 'color:#00800082; ' %}
+    {% elif answer.value == 'no' %}
+      {% set style = 'color:#ff00005e; ' %}
+    {% else %}
+      {% set style = 'color:#ffff007d;font-size:250px;' %}
+    {% endif %}
+
+    <div class="bigAnswer" style={{style}}>
+      {{ answer.value }}
+    </div>
+
+      <div
+        class="bigGif"
+        style='
+          opacity: 1;
+          background-image: url("{{ answer.gif }}");
+        '
+      >
+      </div>
+
+  {% endif %}
+{% endblock %}
